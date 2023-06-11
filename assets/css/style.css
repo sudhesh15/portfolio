@@ -1247,9 +1247,16 @@ blockquote {
     margin-bottom: 10px;
     width: 100%;
   }
+  .port-card {
+    width: 20rem !important;
+  }
 }
 
 .portfolio-name {
   color: #fff !important;
   font-size: 35px !important;
+}
+
+.port-card {
+  width: 25rem;
 }
