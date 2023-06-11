@@ -562,11 +562,19 @@ p {
   text-align: left;
 }
 
+#portfolio {
+  background: url("../img/bg.png") repeat scroll center center/cover;
+}
+.portfolio-name{
+   color: #fff;
+}
+
 #journal,
 #journal-blog {
   height: auto;
   width: 100%;
   background: #f7f7f7;
+  background: url("../img/bg.png") repeat scroll center center/cover;
   padding-bottom: 60px;
   position: relative;
 }
@@ -1239,4 +1247,9 @@ blockquote {
     margin-bottom: 10px;
     width: 100%;
   }
+}
+
+.portfolio-name {
+  color: #fff !important;
+  font-size: 35px !important;
 }
