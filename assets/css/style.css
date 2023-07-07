@@ -721,10 +721,11 @@ main {
   line-height: 1.6;
 }
 
-
-/**
- * #clients 
- */
+@media only screen and (max-width: 600px) {
+  .clients {
+    display: none;
+  }
+}
 
 .clients { margin-bottom: 15px; }
 
@@ -752,20 +753,7 @@ main {
   width: 100%;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #RESUME
-\*-----------------------------------*/
-
 .article-title { margin-bottom: 30px; }
-
-
-/**
- * education and experience 
- */
 
 .timeline { margin-bottom: 30px; }
 
