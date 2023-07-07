@@ -2,230 +2,749 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sudhesh Holla</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
 
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
 
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-  <link href="assets/css/style.css" rel="stylesheet">
-  
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <main>
+    <aside class="sidebar" data-sidebar>
 
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
+      <div class="sidebar-info">
 
-      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">HOME</a></li>
-          <li><a class="nav-link scrollto" href="#about">ABOUT</a></li>
-          <li><a class="nav-link  scrollto" href="#portfolio">PORTFOLIO</a></li>
-          <li><a class="nav-link scrollto" href="#contact">CONTACT</a></li>
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Sudhesh Holla</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:sudheshholla15@gmail.com" class="contact-link">sudheshholla15@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">October 15, 1999</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Kundapura, Udupi</address>
+            </div>
+
+          </li>
+
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/sudheshhollav/" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/sudhesh15/" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/SudheshHolla" target="_blank" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/sudhesh.holla/" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+    <div class="main-content">
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>ABOUT</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>PORTFOLIO</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>BLOG</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>CONTACT</button>
+          </li>
+
+        </ul>
+
       </nav>
+      <article class="about  active" data-page="about">
 
-    </div>
-  </header>
+        <header>
+          <h2 class="h2 article-title">ABOUT ME</h2>
+        </header>
 
-  <div id="hero" class="home">
+        <section class="about-text">
+          <p style="text-align: justify;">
+            Welcome to my portfolio website! I am a dedicated and skilled software engineer with two years of professional experience. In addition to my full-time role, I am also an enthusiastic freelance developer, having successfully completed over 11 projects. I am passionate about collaborating with clients to bring their visions to life and always strive for excellence in every task I undertake.
+          </p>
+          <p style="text-align: justify;">
+            My proficiency extends across a wide range of technologies including HTML, CSS, JavaScript, Bootstrap, Node.js, MongoDB, MySQL, Docker, Kubernetes, and GCP. I am eager to take on new freelance opportunities and explore more challenging positions in my career. Let's connect and create something exceptional together!
+          </p>
+        </section>
 
-    <div class="container">
-      <div class="hero-content">
-        <h1>I'm <span class="typed" data-typed-items="SUDHESH HOLLA, A SOFTWARE ENGINEER, A FREELANCER"></span></h1>
+        <div class="modal-container" data-modal-container>
 
-        <ul class="list-unstyled list-social">
-          <li><a href="https://www.linkedin.com/in/sudheshhollav/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-          <li><a href="mailto:sudheshholla15@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a></li>
-          <li><a href="https://www.instagram.com/sudhesh.holla/" target="_blank"><i class="bi bi-instagram"></i></a></li>
-          <li><a href="https://twitter.com/SudheshHolla" target="_blank"><i class="bi bi-twitter"></i></a></li>
-          <li><a href="https://github.com/sudhesh15/" target="_blank"><i class="bi bi-github"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+          <div class="overlay" data-overlay></div>
 
-  <main id="main">
-    <div id="about" class="paddsection">
-      <div class="container">
-        <div class="row justify-content-between">
+          <section class="testimonials-modal">
 
-          <div class="col-lg-4 ">
-            <div class="div-img-bg">
-              <div class="about-img">
-                <img src="assets/img/me.png" class="img-responsive" alt="me">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
               </div>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="about-descr">
-             <p class="separator" style="text-align: justify;">
-<span style="color:black;font-size:25px;font-weight: bold;">W</span>elcome to my portfolio website! I am a dedicated and skilled software engineer with two years of professional experience. In addition to my full-time role, I am also an enthusiastic freelance developer, having successfully completed over 11 projects. I am passionate about collaborating with clients to bring their visions to life and always strive for excellence in every task I undertake. My proficiency extends across a wide range of technologies including HTML, CSS, JavaScript, Bootstrap, Node.js, MongoDB, MySQL, Docker, Kubernetes, and GCP. I am eager to take on new freelance opportunities and explore more challenging positions in my career. Let's connect and create something exceptional together!</p>
 
             </div>
-            <br>
-            <span class="mt-0">
-              <a href="assets/Resume.pdf" class="btn btn-primary abt-btn"><i class="bi bi-file-earmark-fill"></i> &nbsp DOWNLOAD MY RESUME</a>
-              <a href="#contact" class="btn btn-primary abt-btn"><i class="bi bi-bag"></i> &nbsp HIRE ME AS FREELANCER</a>
-            </span>
 
-          </div>
+          </section>
+
         </div>
-      </div>
-    </div>
+        <section class="clients">
 
-    <div id="portfolio" class="paddsection">
+          <h3 class="h3 clients-title">MY TECH STACK</h3>
 
-      <div class="container">
-        <div class="section-title text-center">
-          <h2 class="portfolio-name">My Portfolio</h2>
-        </div>
-      </div>
+          <ul class="clients-list has-scrollbar">
 
-      <div class="container">
-        <div class="journal-block">
-          <div class="row">
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-stack/1.png" alt="client logo">
+              </a>
+            </li>
 
-            <div class="col-lg-6 d-flex justify-content-center">
-              <div class="journal-info">
-                <div class="card port-card" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
-                  <img class="card-img-top" src="assets/img/1.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Freelancing work</h5>
-                    <p class="card-text">Here are some of my freelancing projects that I have worked on.</p><br>
-                    <a href="freelacing-projects.html" class="btn btn-primary">Click here</a>
-                  </div>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-stack/2.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-stack/3.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-stack/4.png" alt="client logo">
+              </a>
+            </li>>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-stack/5.png" alt="client logo">
+              </a>
+            </li>>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-stack/6.png" alt="client logo">
+              </a>
+            </li>>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-stack/7.png" alt="client logo">
+              </a>
+            </li>>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/tech-stack/8.png" alt="client logo">
+              </a>
+            </li>>
+            </li>
+          </ul>
+
+        </section>
+
+        <section class="service">
+          <h3 class="h3 service-title"></h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/2.png" alt="Web development icon" width="40">
+              </div>
+              <a href="assets/Resume.pdf" attributes-list download>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">DOWNLOAD MY RESUME</h4>
                 </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">PORTFOLIO</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Freelancing Work</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Hobby Projects</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
               </div>
-            </div>
-            <div class="col-lg-6 d-flex justify-content-center">
-              <div class="journal-info">
-                <div class="card port-card" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;">
-                  <img class="card-img-top" src="assets/img/2.png" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Hobby Projects</h5>
-                    <p class="card-text">Click here to see the hobby projects that I have worked over weekends to enhance my skills.</p><br>
-                    <a href="hobby-projects.html" class="btn btn-primary">Click here</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Freelancing Work</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Hobby Projects</button>
+              </li>
+
+            </ul>
+
           </div>
-        </div>
-      </div>
-    </div>
-    <div id="contact" class="paddsection">
-      <div class="container">
-        <div class="contact-block1">
-          <div class="row">
 
-            <div class="col-lg-6">
-              <div class="contact-contact">
+          <ul class="project-list">
 
-                <h2 class="mb-30">CONTACT ME/HIRE ME</h2>
+            <li class="project-item  active" data-filter-item data-category="freelancing work">
+              <a href="https://tfnofficial.com/" target="_blank">
 
-                <ul class="contact-details">
-                  <p class="card-text">I'm available for full-time or freelacing work, please feel free to contact me.</p>
-                  <a href="assets/Resume.pdf" class="btn btn-primary"><i class="bi bi-file-earmark-fill"></i> &nbsp DOWNLOAD MY RESUME</a><br><br>
-                  <li><span>Kundapura, Udupi</span></li>
-                  <li><span>sudheshholla15@gmail.com</span></li>
-                </ul>
-
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <form action="https://formspree.io/f/xrgyyqjl" method="POST" role="form" class="php-email-form">
-                <div class="row gy-3">
-                  <div class="col-lg-6">
-                    <div class="form-group contact-block1">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                    </div>
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                    </div>
+                  <img src="./assets/images/11.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">The Freelancer Network</h3>
+
+                <p class="project-category">Freelancing Work</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="freelancing work">
+              <a href="https://sudhesh15.github.io/gamingOlympian/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                    </div>
+                  <img src="./assets/images/12.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Gaming Olympian</h3>
+
+                <p class="project-category">Freelancing Work</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="freelancing work">
+              <a href="https://www.rchemgroup.com/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <textarea class="form-control" name="message" placeholder="Message" required></textarea>
-                    </div>
+                  <img src="./assets/images/13.png" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">RCHEM Organics</h3>
+
+                <p class="project-category">Freelancing Work</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="freelancing work">
+              <a href="https://sudhesh15.github.io/fundvice/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <div class="col-lg-12">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <img src="./assets/images/14.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundvice</h3>
+
+                <p class="project-category">Freelancing Work</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="freelancing work">
+              <a href="https://hollastv.in/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <div class="mt-0">
-                    <input type="submit" class="btn btn-primary" value="Send message">
+                  <img src="./assets/images/15.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Holla's</h3>
+
+                <p class="project-category">Freelancing Work</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="freelancing work">
+              <a href="https://sudhesh15.github.io/ezeeCharge/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
+
+                  <img src="./assets/images/16.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Ezeecharge</h3>
+
+                <p class="project-category">Freelancing Work</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="freelancing work">
+              <a href="http://www.hrdinternationalindia.com/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/17.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">HRD International</h3>
+
+                <p class="project-category">Freelancing Work</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="freelancing work">
+              <a href="http://icloudunlock.in/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/18.png" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Icloud Unlock</h3>
+
+                <p class="project-category">Freelancing Work</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="freelancing work">
+              <a href="https://www.cellrecharge.co/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/19.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Cell Recharge</h3>
+
+                <p class="project-category">Freelancing Work</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="freelancing work">
+              <a href="http://universalpay.co.in" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/20.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Universal Pay</h3>
+
+                <p class="project-category">Freelancing Work</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="freelancing work">
+              <a href="http://cafetulumculture.com" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/21.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Cafe Tulum Culture</h3>
+
+                <p class="project-category">Freelancing Work</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="hobby projects">
+              <a href="https://hollas-weather-app.netlify.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/51.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Weather Application</h3>
+
+                <p class="project-category">Hobby Projects</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="hobby projects">
+              <a href="https://hollas-url-shortener.netlify.app/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/52.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">URL Shortner</h3>
+
+                <p class="project-category">Hobby Projects</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="hobby projects">
+              <a href="https://hollas-price-portal.netlify.app/home" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/53.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Price Portal</h3>
+
+                <p class="project-category">Hobby Projects</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="hobby projects">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/54.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Resume Builder</h3>
+
+                <p class="project-category">Hobby Projects</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="hobby projects">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/55.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Travel Booking App</h3>
+
+                <p class="project-category">Hobby Projects</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="hobby projects">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/56.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSA Work</h3>
+
+                <p class="project-category">Hobby Projects</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">BLOG</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/pulse/multilingual-support-e-commerce-platform-sudhesh-holla-v/" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.png" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">#Nodejs</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">September 05, 2022</time>
+                  </div>
+
+                  <h5 class="h5 blog-item-title">Multilingual Support for E-Commerce Platform</h5>
 
                 </div>
-              </form>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+      <article class="contact" id="contact-us" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">CONTACT</h2>
+        </header>
+
+        <section class="service">
+          <h3 class="h3 service-title"></h3>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/1.png" alt="Web development icon" width="40">
+              </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">HIRE ME AS FREELANCER</h4>
+                  <p class="service-item-text">
+                    I am enthusiastically open to embracing both full-time and freelance opportunities. Please feel free to reach out, as I eagerly anticipate engaging in a meaningful conversation with you.
+                  </p>
+                </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">CONTACT FORM</h3>
+
+          <form action="https://formspree.io/f/xrgyyqjl" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-          </div>
-        </div>
-      </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
 
   </main>
-  <div id="footer" class="text-center">
-    <div class="container">
-      <div class="socials-media text-center">
-
-        <ul class="list-unstyled">
-          <li><a href="https://www.linkedin.com/in/sudheshhollav/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
-          <li><a href="mailto:sudheshholla15@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a></li>
-          <li><a href="https://www.instagram.com/sudhesh.holla/" target="_blank"><i class="bi bi-instagram"></i></a></li>
-          <li><a href="https://twitter.com/SudheshHolla" target="_blank"><i class="bi bi-twitter"></i></a></li>
-          <li><a href="https://github.com/sudhesh15/" target="_blank"><i class="bi bi-github"></i></a></li>
-        </ul>
-
-      </div>
-      <div class="credits">
-        Designed & Developed by Sudhesh Holla</a>
-      </div>
-
-    </div>
-  </div>
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <script src="assets/js/main.js"></script>
-
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
