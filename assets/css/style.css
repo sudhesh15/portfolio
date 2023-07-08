@@ -727,6 +727,10 @@ main {
   }
 }
 
+.skills-section{
+  width: 200%;
+}
+
 .clients { margin-bottom: 15px; }
 
 .clients-list {
@@ -737,7 +741,6 @@ main {
   margin: 0 -15px;
   padding: 25px;
   padding-bottom: 25px;
-  overflow-x: auto;
   scroll-behavior: smooth;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
