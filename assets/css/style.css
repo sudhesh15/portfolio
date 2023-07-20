@@ -1,27 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
-
-  /**
-   * colors
-   */
-
-  /* gradient */
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
@@ -722,8 +699,11 @@ main {
 }
 
 @media only screen and (max-width: 600px) {
-  .clients {
-    display: none;
+  .skills-section img{
+    width: 100%;
+  }
+  .quote{
+    font-size: 15px;
   }
 }
 
