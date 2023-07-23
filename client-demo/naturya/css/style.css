@@ -214,7 +214,7 @@
 .page-header {
     padding-top: 12rem;
     padding-bottom: 6rem;
-    background: url(../img/bg.png) top right no-repeat;
+    background: url(../img/5.jpg) top right no-repeat;
     background-size: cover;
 }
 
@@ -279,8 +279,8 @@
     color: #FFFFFF;
 }
 
-.product-item {
-    box-shadow: 5px 10px 8px #888888;
+.product-item{
+    background: #fff;
 }
 
 .product-item img {
@@ -323,8 +323,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    border: 2px solid #fff;
+    color: var(--primary);
+    border: 2px solid var(--primary);
     border-radius: 50px;
     font-size: 18px;
     transition: .5s;
@@ -413,4 +413,8 @@
   #contact input, #contact textarea {
     width: 100%;
     margin-bottom: 5px;
+  }
+
+  .cement-bg{
+    background-color: #f0f0f0 !important;
   }
