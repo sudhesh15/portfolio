@@ -1,6 +1,14 @@
 /********** Template CSS **********/
+body{
+    font-family: 'Gotham-Medium', arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Gotham-Medium', arial, sans-serif;
+}
+
 :root {
-    --primary: #288E06;
+    --primary: #378461;
     --secondary: #F65005;
     --light: #F7F8FC;
     --dark: #111111;
@@ -31,7 +39,7 @@
 }
 
 .button {
-    background-color: #288E06;
+    background-color: #378461;
     border: none;
     color: white;
     padding: 12px 24px;
@@ -224,7 +232,7 @@
 
 .section-header h3 {
     font-size: 32px;
-    color: #1FA211;
+    color: #378461;
     text-align: center;
     font-weight: 700;
     padding-bottom: 15px;
@@ -247,7 +255,7 @@
     display: block;
     width: 40px;
     height: 3px;
-    background: #1FA211;
+    background: #378461;
     bottom: 0;
     left: calc(50% - 20px);
   }
