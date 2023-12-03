@@ -501,7 +501,7 @@ main {
 
 .service-item {
   position: relative;
-  background: var(--border-gradient-onyx);
+  background: transparent;
   padding: 20px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
@@ -514,6 +514,20 @@ main {
   inset: 1px;
   background: var(--bg-gradient-jet);
   border-radius: inherit;
+  z-index: -1;
+}
+
+.service-item-1 {
+  position: relative;
+  background: transparent;
+  padding: 0px;
+  z-index: 1;
+}
+
+.service-item-1::before {
+  content: "";
+  position: absolute;
+  background: transparent;
   z-index: -1;
 }
 
