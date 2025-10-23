@@ -1,767 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Sudhesh Holla</title>
-      <!--
-         - favicon
-         -->
-      <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
-      <!--
-         - custom css link
-         -->
-      <link rel="stylesheet" href="./assets/css/style.css">
-      <!--
-         - google font link
-         -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQEZ5DDPXZ"></script>
-      <script>
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sudhesh Holla</title>
+   <link rel="icon" href="./assets/images/logo.png">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="./assets/css/style.css">
+   <script src="./assets/js/index.js" defer></script>
+   <style>
+   @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+   </style>
+</head>
+<body>
+   <div class="grid-bg"></div>
+   <div class="spotlight"></div>
 
-         gtag('config', 'G-GQEZ5DDPXZ');
-      </script>
-   </head>
-   <body>
-      <main>
-         <aside class="sidebar active" data-sidebar>
-            <div class="sidebar-info">
-               <figure class="avatar-box">
-                  <img src="./assets/images/my-avatar.png" alt="Sudhesh Holla" width="80">
-               </figure>
-               <div class="info-content">
-                  <h1 class="name" title="Sudhesh Holla">Sudhesh Holla</h1>
-                  <p class="title">Senior Software Engineer</p>
+   <!-- Navigation -->
+   <nav>
+      <div class="container">
+         <div class="logo">Sudhesh Holla.</div>
+         <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+         </button>
+         <ul class="nav-links" id="navLinks">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blogs">Writings</a></li>
+            <li><a href="#about">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+      </div>
+   </nav>
+
+   <!-- Hero Section -->
+   <section class="hero">
+      <div class="container">
+         <div class="hero-content">
+            <h1><span id="greeting"></span><br>I'm Sudhesh Holla.</h1>
+               <p class="hero-subtitle">I'm a Senior Software Engineer passionate about building scalable products. On weekends, I help brands get their websites online and yes, that makes me a weekend freelancer.</p>
+               <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                  <a href="#contact" class="btn-premium">Start a Project</a>
+                  <a href="#blogs" class="btn-outline">Read Blogs</a>
                </div>
-               <button class="info_more-btn" data-sidebar-btn>
-                  <span>Show Contacts</span>
-                  <ion-icon name="chevron-down"></ion-icon>
-               </button>
-            </div>
-            <div class="sidebar-info_more">
-               <div class="separator"></div>
-               <ul class="contacts-list">
-                  <li class="contact-item">
-                     <div class="icon-box">
-                        <ion-icon name="mail-outline"></ion-icon>
-                     </div>
-                     <div class="contact-info">
-                        <p class="contact-title">Email</p>
-                        <a href="mailto:sudheshholla15@gmail.com" class="contact-link">sudheshholla15@gmail.com</a>
-                     </div>
-                  </li>
-                  <li class="contact-item">
-                     <div class="icon-box">
-                        <ion-icon name="location-outline"></ion-icon>
-                     </div>
-                     <div class="contact-info">
-                        <p class="contact-title">Location</p>
-                        <address>Udupi & Bangalore</address>
-                     </div>
-                  </li>
-               </ul>
-               <div class="separator"></div>
-               <ul class="social-list">
-                  <li class="social-item">
-                     <a href="https://www.linkedin.com/in/sudheshhollav/" target="_blank" class="social-link">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                     </a>
-                  </li>
-                  <li class="social-item">
-                     <a href="https://github.com/sudhesh15/" target="_blank" class="social-link">
-                        <ion-icon name="logo-github"></ion-icon>
-                     </a>
-                  </li>
-                  <li class="social-item">
-                     <a href="https://leetcode.com/sudheshholla15/" target="_blank" class="social-link">
-                     <img src="assets//images/leetcode.png" width="15px" height="15px">
-                     </a>
-                  </li>
-                  <li class="social-item">
-                     <a href="https://twitter.com/SudheshHolla" target="_blank" class="social-link">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                     </a>
-                  </li>
-                  <li class="social-item">
-                     <a href="https://www.instagram.com/sudhesh.holla/" target="_blank" class="social-link">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                     </a>
-                  </li>
-               </ul>
-            </div>
-         </aside>
-         <div class="main-content">
-            <nav class="navbar">
-               <ul class="navbar-list">
-                  <li class="navbar-item">
-                     <button class="navbar-link  active" data-nav-link>ABOUT</button>
-                  </li>
-                  <li class="navbar-item">
-                     <button class="navbar-link" data-nav-link>PORTFOLIO</button>
-                  </li>
-                  <li class="navbar-item">
-                     <button class="navbar-link" data-nav-link>BLOG</button>
-                  </li>
-                  <li class="navbar-item">
-                     <button class="navbar-link" data-nav-link>CERTIFICATION</button>
-                  </li>
-                  <li class="navbar-item">
-                     <button class="navbar-link" data-nav-link>CONTACT</button>
-                  </li>
-               </ul>
-            </nav>
-            <article class="about  active" data-page="about">
-               <header>
-                  <h2 class="h2 article-title">ABOUT ME</h2>
-               </header>
-               <section class="about-text">
-                  <p style="text-align: justify;">
-                     Welcome to my portfolio website! I am a dedicated and skilled software engineer with three plus years of professional experience. In addition to my full-time role, I am also an enthusiastic freelance developer, having successfully completed over 11 projects. I am passionate about collaborating with clients to bring their visions to life and always strive for excellence in every task I undertake.
-                  </p>
-                  <p style="text-align: justify;">
-                     My proficiency extends across a wide range of technologies including HTML, CSS, JavaScript, React, Bootstrap, Node.js, MongoDB, MySQL, Docker, Kubernetes, and GCP. I am eager to take on new freelance opportunities and explore more challenging positions in my career. Let's connect and create something exceptional together!
-                  </p>
-               </section>
-               <div class="modal-container" data-modal-container>
-                  <div class="overlay" data-overlay></div>
-                  <section class="testimonials-modal">
-                     <button class="modal-close-btn" data-modal-close-btn>
-                        <ion-icon name="close-outline"></ion-icon>
-                     </button>
-                     <div class="modal-img-wrapper">
-                        <figure class="modal-avatar-box">
-                           <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-                        </figure>
-                        <img src="./assets/images/icon-quote.svg" alt="quote icon">
-                     </div>
-                     <div class="modal-content">
-                        <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-                        <time datetime="2021-06-14">14 June, 2021</time>
-                        <div data-modal-text>
-                           <p>
-                              Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                              lot of experience
-                              and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                              consectetur adipiscing
-                              elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                           </p>
-                        </div>
-                     </div>
-                  </section>
-               </div>
-               <section class="clients">
-                  <h3 class="h3 clients-title">MY TECH STACK</h3>
-                  <ul class="clients-list">
-                     <div class="skills-section">
-                        <img src="./assets/images/skills.png" alt="client logo">
-                     </div>
-                  </ul>
-               </section>
-               <section class="service">
-                  <ul class="service-list">
-                     <li class="service-item-1">
-                        <a href="assets/SudheshHolla-Resume.pdf">
-                        <button class="form-btn" style="float:left; margin: 25px 0px 15px 5px">
-                        <img src="./assets/images/2.png" alt="" width="25">
-                        <span>Download My Resume</span>
-                        </button>
-                        </a>
-                     </li>
-                  </ul>
-               </section>
-            </article>
-            <article class="portfolio" data-page="portfolio">
-               <header>
-                  <h2 class="h2 article-title">PORTFOLIO</h2>
-               </header>
-               <section class="projects">
-                  <ul class="filter-list">
-                     <li class="filter-item">
-                        <button class="active" data-filter-btn>All</button>
-                     </li>
-                     <li class="filter-item">
-                        <button data-filter-btn>Freelancing Work</button>
-                     </li>
-                     <li class="filter-item">
-                        <button data-filter-btn>Hobby Projects</button>
-                     </li>
-                  </ul>
-                  <div class="filter-select-box">
-                     <button class="filter-select" data-select>
-                        <div class="select-value" data-selecct-value>Select category</div>
-                        <div class="select-icon">
-                           <ion-icon name="chevron-down"></ion-icon>
-                        </div>
-                     </button>
-                     <ul class="select-list">
-                        <li class="select-item">
-                           <button data-select-item>All</button>
-                        </li>
-                        <li class="select-item">
-                           <button data-select-item>Freelancing Work</button>
-                        </li>
-                        <li class="select-item">
-                           <button data-select-item>Hobby Projects</button>
-                        </li>
-                     </ul>
-                  </div>
-                  <ul class="project-list">
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a href="https://www.auraudupi.in" target="_blank">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/28.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">Aura Cakes</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a href="https://www.dhithiindustries.com" target="_blank">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/27.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">Dhithi Industries</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a href="https://www.venkatalaxmi.com/" target="_blank">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/26.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">Venkatalaxmi Group</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a href="https://www.naturyafoods.com/" target="_blank">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/22.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">Naturya</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a href="https://www.rchemgroup.com/" target="_blank">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/13.png" alt="fundo" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">RCHEM Organics</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a href="https://hollastv.in/" target="_blank">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/15.png" alt="dsm." loading="lazy">
-                           </figure>
-                           <h3 class="project-title">Holla's</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a href="http://www.hrdinternationalindia.com/" target="_blank">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/17.png" alt="summary" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">HRD International</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a href="https://www.cellrecharge.co/" target="_blank">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/19.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">Cell Recharge</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a href="http://universalpay.co.in" target="_blank">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/20.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">Universal Pay</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a onclick="alert('Domain expired!')">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/11.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">The Freelancer Network</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a onclick="alert('Domain expired!')">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/12.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">Gaming Olympian</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a onclick="alert('Domain expired!')">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/14.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">FundVice</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a onclick="alert('Domain expired!')">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/16.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">Ezee Charge</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a onclick="alert('Domain expired!')">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/18.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">Icloud Unlock</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a onclick="alert('Domain expired!')">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/21.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">Cafe Tulum Culture</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a onclick="alert('Domain expired!')">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/23.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">Raising Smiles</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a onclick="alert('Domain expired!')">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/24.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">PC Experts</h3>
-                           <p class="project-category">Freelancing Work</p>
-                        </a>
-                     </li>
-                     <!-- <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a href="https://pcexperts.in/" target="_blank">
-                        
-                          <figure class="project-img">
-                            <div class="project-item-icon-box">
-                              <ion-icon name="eye-outline"></ion-icon>
-                            </div>
-                        
-                            <img src="./assets/images/24.png" alt="arrival" loading="lazy">
-                          </figure>
-                        
-                          <h3 class="project-title">PC Experts</h3>
-                        
-                          <p class="project-category">Freelancing Work</p>
-                        
-                        </a>
-                        </li> -->
-                     <!-- <li class="project-item  active" data-filter-item data-category="freelancing work">
-                        <a href="" target="_blank">
-                        
-                          <figure class="project-img">
-                            <div class="project-item-icon-box">
-                              <ion-icon name="eye-outline"></ion-icon>
-                            </div>
-                        
-                            <img src="./assets/images/25.png" alt="arrival" loading="lazy">
-                          </figure>
-                        
-                          <h3 class="project-title">The Palm Island</h3>
-                        
-                          <p class="project-category">Freelancing Work</p>
-                        
-                        </a>
-                        </li> 
-                     <li class="project-item  active" data-filter-item data-category="hobby projects">
-                        <a href="https://hollas-travel-booking-app.netlify.app/home" target="_blank">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/55.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">Travel Booking App</h3>
-                           <p class="project-category">Hobby Projects</p>
-                        </a>
-                     </li>
-                     <li class="project-item  active" data-filter-item data-category="hobby projects">
-                        <a href="https://hollas-price-portal.netlify.app/home" target="_blank">
-                           <figure class="project-img">
-                              <div class="project-item-icon-box">
-                                 <ion-icon name="eye-outline"></ion-icon>
-                              </div>
-                              <img src="./assets/images/53.png" alt="arrival" loading="lazy">
-                           </figure>
-                           <h3 class="project-title">Price Portal</h3>
-                           <p class="project-category">Hobby Projects</p>
-                        </a>
-                     </li>-->
-                     <!---<li class="project-item  active" data-filter-item data-category="hobby projects">
-                        <a href="#">
-                        
-                          <figure class="project-img">
-                            <div class="project-item-icon-box">
-                              <ion-icon name="eye-outline"></ion-icon>
-                            </div>
-                        
-                            <img src="./assets/images/54.png" alt="arrival" loading="lazy">
-                          </figure>
-                        
-                          <h3 class="project-title">Resume Builder</h3>
-                        
-                          <p class="project-category">Hobby Projects</p>
-                        
-                        </a>
-                        </li>---->
-                  </ul>
-               </section>
-            </article>
-            <article class="blog" data-page="blog">
-               <header>
-                  <h2 class="h2 article-title">BLOG</h2>
-               </header>
-               <section class="blog-posts">
-                  <ul class="blog-posts-list">
-                     <li class="blog-post-item">
-                        <a href="https://medium.com/@sudheshholla15/getting-started-with-graphql-7f405932a42b" target="_blank">
-                           <figure class="blog-banner-box">
-                              <img src="./assets/images/blog-13.png" alt="" loading="lazy">
-                           </figure>
-                           <div class="blog-content">
-                              <div class="blog-meta">
-                                 <p class="blog-category">#graphQL</p>
-                                 <span class="dot"></span>
-                                 <time>March 13, 2025</time>
-                              </div>
-                              <h5 class="h5 blog-item-title">Getting started with GraphQL.</h5>
-                           </div>
-                        </a>
-                     </li>
-                     <li class="blog-post-item">
-                        <a href="https://medium.com/@sudheshholla15/understanding-basics-of-scss-4e7cff54a92c" target="_blank">
-                           <figure class="blog-banner-box">
-                              <img src="./assets/images/blog-12.png" alt="" loading="lazy">
-                           </figure>
-                           <div class="blog-content">
-                              <div class="blog-meta">
-                                 <p class="blog-category">#scss</p>
-                                 <span class="dot"></span>
-                                 <time>February 17, 2024</time>
-                              </div>
-                              <h5 class="h5 blog-item-title">Understanding Basics of SCSS.</h5>
-                           </div>
-                        </a>
-                     </li>
-                     <li class="blog-post-item">
-                        <a href="https://medium.com/@sudheshholla15/all-you-need-to-know-about-event-loop-7f2f7fd550fc" target="_blank">
-                           <figure class="blog-banner-box">
-                              <img src="./assets/images/blog-11.png" alt="" loading="lazy">
-                           </figure>
-                           <div class="blog-content">
-                              <div class="blog-meta">
-                                 <p class="blog-category">#javascript</p>
-                                 <span class="dot"></span>
-                                 <time>November 17, 2024</time>
-                              </div>
-                              <h5 class="h5 blog-item-title">All you need to know about EVENT LOOP.</h5>
-                           </div>
-                        </a>
-                     </li>
-                     <li class="blog-post-item">
-                        <a href="https://medium.com/@sudheshholla15/getting-started-with-node-js-048e354e9c69" target="_blank">
-                           <figure class="blog-banner-box">
-                              <img src="./assets/images/blog-10.png" alt="" loading="lazy">
-                           </figure>
-                           <div class="blog-content">
-                              <div class="blog-meta">
-                                 <p class="blog-category">#javascript</p>
-                                 <span class="dot"></span>
-                                 <time>August 10, 2024</time>
-                              </div>
-                              <h5 class="h5 blog-item-title">Getting Started with Node.js</h5>
-                           </div>
-                        </a>
-                     </li>
-                     <li class="blog-post-item">
-                        <a href="https://medium.com/@sudheshholla15/this-javascript-interview-question-will-blow-your-mind-09b38b0d3332" target="_blank">
-                           <figure class="blog-banner-box">
-                              <img src="./assets/images/blog-9.gif" alt="" loading="lazy">
-                           </figure>
-                           <div class="blog-content">
-                              <div class="blog-meta">
-                                 <p class="blog-category">#javascript</p>
-                                 <span class="dot"></span>
-                                 <time>July 28, 2024</time>
-                              </div>
-                              <h5 class="h5 blog-item-title">This JavaScript Interview Question will blow your mind ! 🤯</h5>
-                           </div>
-                        </a>
-                     </li>
-                     <li class="blog-post-item">
-                        <a href="https://medium.com/@sudheshholla15/all-you-need-to-know-about-javascript-how-code-is-executed-behind-the-scenes-d825ae0dc4ec" target="_blank">
-                           <figure class="blog-banner-box">
-                              <img src="./assets/images/blog-3.png" alt="" loading="lazy">
-                           </figure>
-                           <div class="blog-content">
-                              <div class="blog-meta">
-                                 <p class="blog-category">#javascript</p>
-                                 <span class="dot"></span>
-                                 <time datetime="2022-02-23">March 23, 2024</time>
-                              </div>
-                              <h5 class="h5 blog-item-title">How JavaScript code gets executed behind the scenes</h5>
-                           </div>
-                        </a>
-                     </li>
-                     <li class="blog-post-item">
-                        <a href="https://medium.com/@sudheshholla15/hoisting-in-javascript-adf75254d0ca" target="_blank">
-                           <figure class="blog-banner-box">
-                              <img src="./assets/images/blog-4.png" alt="" loading="lazy">
-                           </figure>
-                           <div class="blog-content">
-                              <div class="blog-meta">
-                                 <p class="blog-category">#javascript</p>
-                                 <span class="dot"></span>
-                                 <time datetime="2022-02-23">March 24, 2024</time>
-                              </div>
-                              <h5 class="h5 blog-item-title">Hoisting in JavaScript</h5>
-                           </div>
-                        </a>
-                     </li>
-                     <li class="blog-post-item">
-                        <a href="https://medium.com/@sudheshholla15/scope-chain-and-block-chain-in-javascript-c60d0a2ce131" target="_blank">
-                           <figure class="blog-banner-box">
-                              <img src="./assets/images/blog-5.png" alt="" loading="lazy">
-                           </figure>
-                           <div class="blog-content">
-                              <div class="blog-meta">
-                                 <p class="blog-category">#javascript</p>
-                                 <span class="dot"></span>
-                                 <time datetime="2022-02-23">March 24, 2024</time>
-                              </div>
-                              <h5 class="h5 blog-item-title">Scope Chain and Block Chain in JavaScript</h5>
-                           </div>
-                        </a>
-                     </li>
-                     <li class="blog-post-item">
-                        <a href="https://medium.com/@sudheshholla15/call-apply-and-bind-in-javascript-2d1dc1b7a521" target="_blank">
-                           <figure class="blog-banner-box">
-                              <img src="./assets/images/blog-6.png" alt="" loading="lazy">
-                           </figure>
-                           <div class="blog-content">
-                              <div class="blog-meta">
-                                 <p class="blog-category">#javascript</p>
-                                 <span class="dot"></span>
-                                 <time datetime="2022-02-23">March 25, 2024</time>
-                              </div>
-                              <h5 class="h5 blog-item-title">Call, Apply & Bind in JavaScript</h5>
-                           </div>
-                        </a>
-                     </li>
-                     <li class="blog-post-item">
-                        <a href="https://www.linkedin.com/pulse/multilingual-support-e-commerce-platform-sudhesh-holla-v/" target="_blank">
-                           <figure class="blog-banner-box">
-                              <img src="./assets/images/blog-1.png" alt="" loading="lazy">
-                           </figure>
-                           <div class="blog-content">
-                              <div class="blog-meta">
-                                 <p class="blog-category">#Nodejs</p>
-                                 <span class="dot"></span>
-                                 <time datetime="2022-02-23">September 05, 2022</time>
-                              </div>
-                              <h5 class="h5 blog-item-title">Multilingual Support for an E-Commerce Platform</h5>
-                           </div>
-                        </a>
-                     </li>
-                     <li class="blog-post-item">
-                        <a href="https://medium.com/@sudheshholla15/how-to-add-an-on-scroll-whatsapp-button-to-your-website-0b53b367cc36" target="_blank">
-                           <figure class="blog-banner-box">
-                              <img src="./assets/images/blog-2.png" alt="" loading="lazy">
-                           </figure>
-                           <div class="blog-content">
-                              <div class="blog-meta">
-                                 <p class="blog-category">#frontend #css</p>
-                                 <span class="dot"></span>
-                                 <time datetime="2022-02-23">March 19, 2024</time>
-                              </div>
-                              <h5 class="h5 blog-item-title">How to add an on-scroll WhatsApp button to your website.</h5>
-                           </div>
-                        </a>
-                     </li>
-                  </ul>
-               </section>
-            </article>
-            <article class="blog" data-page="certification">
-               <header>
-                  <h2 class="h2 article-title">CERTIFICATION</h2>
-               </header>
-               <section class="blog-posts">
-                  <ul class="blog-posts-list">
-                     <li class="blog-post-item">
-                        <a href="https://www.credly.com/badges/c3eaf452-9b24-4a8c-9d79-87aa1efd39bd/linked_in?t=smzqcf" target="_blank">
-                           <figure class="blog-banner-box">
-                              <img src="./assets/images/72.png" alt="" loading="lazy">
-                           </figure>
-                           <div class="blog-content">
-                              <div class="blog-meta">
-                                 <p class="blog-category">#Contentful</p>
-                                 <span class="dot"></span>
-                                 <time datetime="2022-02-23">November, 2024</time>
-                              </div>
-                              <h5 class="h5 blog-item-title">Contentful Certified Professional</h5>
-                           </div>
-                        </a>
-                     </li>
-                     <li class="blog-post-item">
-                        <a href="https://google.accredible.com/293a89d2-8c6f-4f19-b07a-4b7f6715aee9/" target="_blank">
-                           <figure class="blog-banner-box">
-                              <img src="./assets/images/70.png" alt="" loading="lazy">
-                           </figure>
-                           <div class="blog-content">
-                              <div class="blog-meta">
-                                 <p class="blog-category">#gcp</p>
-                                 <span class="dot"></span>
-                                 <time datetime="2022-02-23">September, 2023</time>
-                              </div>
-                              <h5 class="h5 blog-item-title">Google professional Cloud Architect Examination</h5>
-                           </div>
-                        </a>
-                     </li>
-                     <li class="blog-post-item">
-                        <a href="https://www.linkedin.com/learning/certificates/4357af74cc14e50b443f212622bd4f2a73dd470b642243c25e56a300110c24e9?trk=share_certificate" target="_blank">
-                           <figure class="blog-banner-box">
-                              <img src="./assets/images/71.png" alt="" loading="lazy">
-                           </figure>
-                           <div class="blog-content">
-                              <div class="blog-meta">
-                                 <p class="blog-category">#Nodejs</p>
-                                 <span class="dot"></span>
-                                 <time datetime="2022-02-23">May, 2023</time>
-                              </div>
-                              <h5 class="h5 blog-item-title">Node.js Essential Training</h5>
-                           </div>
-                        </a>
-                     </li>
-                  </ul>
-               </section>
-            </article>
-            <article class="contact" id="contact-us" data-page="contact">
-               <header>
-                  <h2 class="h2 article-title">CONTACT</h2>
-               </header>
-               <section class="service">
-                  <h3 class="h3 service-title"></h3>
-                  <ul class="service-list">
-                     <li class="service-item">
-                        <div class="service-icon-box">
-                           <img src="./assets/images/1.png" alt="Web development icon" width="40">
-                        </div>
-                        <div class="service-content-box">
-                           <h4 class="h4 service-item-title">HIRE ME AS FREELANCER</h4>
-                           <p class="service-item-text">
-                              I am enthusiastically open to embracing both full-time and freelance opportunities. Please feel free to reach out, as I eagerly anticipate engaging in a meaningful conversation with you.
-                           </p>
-                        </div>
-                     </li>
-                  </ul>
-               </section>
-               <section class="contact-form">
-                  <h3 class="h3 form-title">CONTACT FORM</h3>
-                  <form action="https://formspree.io/f/xrgyyqjl" method="POST" class="form" data-form>
-                     <div class="input-wrapper">
-                        <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-                        <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-                     </div>
-                     <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-                     <button class="form-btn" type="submit" disabled data-form-btn>
-                        <ion-icon name="paper-plane"></ion-icon>
-                        <span>Send Message</span>
-                     </button>
-                  </form>
-               </section>
-            </article>
          </div>
-      </main>
-      <script src="./assets/js/script.js"></script>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-   </body>
+      </div>
+   </section>
+
+   <!-- Projects Section -->
+   <section id="projects">
+      <div class="container">
+         <div class="section-label">Selected Work</div>
+         <h2 class="section-title">Freelance Projects</h2>
+         
+         <div class="projects-grid">
+               <div class="project-card">
+                  <div class="project-number">01</div>
+                  <h3>Aura</h3>
+                  <p>A charming cake shop based in Udupi. A complete e-commerce platform was developed to enable customers to seamlessly browse and order cakes online, featuring real-time inventory management and secure payment processing for a smooth and reliable shopping experience.</p>
+                  <div class="project-tags">
+                     <span class="project-tag">Shopify</span>
+                     <span class="project-tag">PhonePe Payment Gateway</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="https://auraudupi.in" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                  </div>
+               </div>
+
+               <div class="project-card">
+                  <div class="project-number">02</div>
+                  <h3>Dhithi Industries</h3>
+                  <p>Established in 2021 in Bangalore, provides a comprehensive range of industrial and corporate supplies and services. A modern, responsive landing page was developed to showcase their offerings and strengthen their online presence.</p>
+                  <div class="project-tags">
+                     <span class="project-tag">Bootstrap</span>
+                     <span class="project-tag">Google Analytics</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="https://www.dhithiindustries.com" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                  </div>
+               </div>
+
+               <div class="project-card">
+                  <div class="project-number">03</div>
+                  <h3>Venkatalaxmi Group</h3>
+                  <p>A trusted name with over 27 years of excellence, spanning hospitality, real estate, event management, and dining services. A comprehensive and visually engaging landing page was developed to highlight the group’s legacy, showcase its diverse ventures, and enhance its digital presence.</p>
+                  <div class="project-tags">
+                     <span class="project-tag">Bootstrap</span>
+                     <span class="project-tag">Google Analytics</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="https://www.venkatalaxmi.com" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                  </div>
+               </div>
+
+               <div class="project-card">
+                  <div class="project-number">04</div>
+                  <h3>Naturya Foods</h3>
+                  <p>An ISO 9001:2015 certified fresh food manufacturer and distributor based in Udupi, delivering 100% natural, preservative-free products to retail and HoReCa sectors. A modern landing page was built to showcase their products, innovation, and global reach.</p>
+                  <div class="project-tags">
+                     <span class="project-tag">Bootstrap</span>
+                     <span class="project-tag">Google Analytics</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="https://www.naturyafoods.com" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                  </div>
+               </div>
+         </div>
+
+         <h2 class="section-title" style="margin-top: 5rem;">Personal Projects</h2>
+         
+         <div class="projects-grid">
+               <div class="project-card">
+                  <div class="project-number">01</div>
+                  <h3>GranthX AI</h3>
+                  <p>A GenAI-powered platform that turns documents, websites, and text into interactive conversations.</p>
+                  <div class="project-tags">
+                     <span class="project-tag">JavaScript</span>
+                     <span class="project-tag">GenAI</span>
+                     <span class="project-tag">Cerebra</span>
+                     <span class="project-tag">Meta llama</span>
+                  </div>
+                  <div class="project-links">
+                     <a href="https://youtu.be/AlrS6VaqcZI" target="_blank" class="project-link">Watch Demo <i class="fas fa-arrow-right"></i></a>
+                     <a href="https://github.com/sudhesh15/granthx-be" target="_blank" class="project-link">GitHub <i class="fas fa-arrow-right"></i></a>
+                  </div>
+               </div>
+
+               <div class="project-card">
+                  <div class="project-number">02</div>
+                  <h3>MasterLingo AI</h3>
+                  <p>An AI-powered real-time language learning app that enables users to practice speaking new languages through interactive voice conversations and personalized feedback.</p>
+                  <div class="project-tags">
+                     <div class="project-tags">
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">GenAI</span>
+                        <span class="project-tag">OpenAI Voice agents</span>
+                  </div>
+                  </div>
+                  <div class="project-links">
+                     <a href="https://youtu.be/tX7Li2hOzV4" target="_blank" class="project-link">Watch Demo <i class="fas fa-arrow-right"></i></a>
+                     <a href="https://github.com/sudhesh15/master-lingo-ai" target="_blank" class="project-link">GitHub <i class="fas fa-arrow-right"></i></a>
+                  </div>
+               </div>
+
+               <div class="project-card">
+                  <div class="project-number">03</div>
+                  <h3>Thumbnailed AI</h3>
+                  <p>Generate stunning, AI-powered thumbnails for your YouTube videos in seconds.</p>
+                  <div class="project-tags">
+                     <div class="project-tags">
+                        <span class="project-tag">JavaScript</span>
+                        <span class="project-tag">GenAI</span>
+                        <span class="project-tag">OpenAI</span>
+                        <span class="project-tag">Gemini Imagen 3.0</span>
+                  </div>
+                  </div>
+                  <div class="project-links">
+                     <a href="https://youtu.be/u2f4pvZ0qJs" target="_blank" class="project-link">Watch Demo <i class="fas fa-arrow-right"></i></a>
+                     <a href="https://github.com/sudhesh15/yt-thumbnail-generator" target="_blank" class="project-link">GitHub <i class="fas fa-arrow-right"></i></a>
+                  </div>
+               </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Blog Section -->
+   <section id="blogs">
+      <div class="container">
+         <div class="section-label">Writings</div>
+         <h2 class="section-title">Latest Articles</h2>
+         
+         <div class="blog-grid">
+            <a href="https://medium.com/@sudheshholla15/introduction-to-rags-a44ffd80f6f4" target="_blank" class="blog-card">
+               <div class="blog-date">Aug 20, 2025</div>
+               <h3>Introduction to RAG’s</h3>
+               <p>Explains how RAG enhances AI accuracy using retrieval, vectorization, chunking, and overlapping for context.</p>
+               <span class="read-more">Read on Medium <i class="fas fa-arrow-right"></i></span>
+            </a>
+
+            <a href="https://medium.com/@sudheshholla15/agentic-ai-agents-tools-explained-224aca1ac256" target="_blank" class="blog-card">
+               <div class="blog-date">Aug 18, 2025</div>
+               <h3>Agentic AI: Agents & Tools Explained</h3>
+               <p>Turns LLMs into action-taking agents by combining chain-of-thought reasoning with tool integrations for real results.</p>
+               <span class="read-more">Read on Medium <i class="fas fa-arrow-right"></i></span>
+            </a>
+
+            <a href="https://medium.com/@sudheshholla15/explaining-tokenization-to-a-fresher-0aab451302da" target="_blank" class="blog-card">
+               <div class="blog-date">Aug 12, 2025</div>
+               <h3>Explaining Tokenization to a Fresher</h3>
+               <p>Explains how GPT breaks text into smaller tokens to understand, process, and generate meaningful responses.</p>
+               <span class="read-more">Read on Medium <i class="fas fa-arrow-right"></i></span>
+            </a>
+
+            <a href="https://medium.com/@sudheshholla15" target="_blank" class="blog-card" style="background: var(--bg-secondary); border: 2px solid var(--text-primary);">
+               <div style="text-align: center; padding: 2rem 0;">
+                  <i class="fab fa-medium" style="font-size: 3rem; margin-bottom: 1.5rem; display: block;"></i>
+                  <h3 style="margin-bottom: 1rem;">Read All Writings</h3>
+                  <p>Explore all my articles on Medium</p>
+                  <span class="read-more">Visit Medium Profile <i class="fas fa-arrow-right"></i></span>
+               </div>
+            </a>
+         </div>
+      </div>
+   </section>
+
+   <!-- About Section -->
+   <section id="about">
+      <div class="container">
+         <div class="about-content">
+            <div class="section-label">Work</div>
+            <h2 class="section-title">Need a website for your business?</h2>
+            <p class="about-text">Your business deserves more than just a website, it deserves a digital identity that stands out. From design to development, we create stunning, user-friendly websites that build trust, attract customers, and help your business grow faster. Let’s turn your vision into an online success story!</p>
+            
+            <div class="skills-grid">
+               <div class="skill-item">
+                  <h4>Share Your Vision</h4>
+                  <p>Tell us about your business and the website you want — we’ll understand your goals and style.</p>
+               </div>
+               <div class="skill-item">
+                  <h4>Get a Quote</h4>
+                  <p>Receive a clear, no-obligation quote with timelines and deliverables.</p>
+               </div>
+               <div class="skill-item">
+                  <h4>Design & Develop</h4>
+                  <p>We bring your vision to life with a modern, responsive, and engaging website.</p>
+               </div>
+               <div class="skill-item">
+                  <h4>Launch & Support</h4>
+                  <p>Your site goes live! We handle deployment and provide ongoing support.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Contact Section -->
+   <section id="contact">
+      <div class="container">
+         <div class="contact-content">
+            <div class="section-label">Contact</div>
+            <h2 class="section-title">Let's work together</h2>
+            
+            <form action="https://formspree.io/f/mnngpyaj" method="POST" id="contactForm">
+               <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" required>
+               </div>
+
+               <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required>
+               </div>
+
+               <div class="form-group">
+                  <label for="project">Project Type</label>
+                  <select id="project" name="project" required>
+                     <option value="">Select project type</option>
+                     <option value="Single Page Website">Single Page Website</option>
+                     <option value="Multi Page Website">Multi Page Website</option>
+                     <option value="E-commerce Website">E-commerce Website</option>
+                     <option value="Software Consulting">Software Consulting</option>
+                  </select>
+               </div>
+
+               <div class="form-group">
+                  <label for="message">Project Details</label>
+                  <textarea id="message" name="message" required></textarea>
+               </div>
+
+               <button type="submit" class="btn-premium">Send Message</button>
+            </form>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer>
+      <div class="container">
+         <div class="footer-content">
+            <div class="copyright">&copy; 2025 All rights reserved</div>
+            <div class="footer-links">
+               <a href="https://github.com/sudhesh15" target="_blank">GitHub</a>
+               <a href="https://www.linkedin.com/in/sudheshhollav" target="_blank">LinkedIn</a>
+               <a href="https://x.com/SudheshHolla" target="_blank">Twitter</a>
+               <a href="mailto:sudheshholla15@gmail.com">Email</a>
+            </div>
+         </div>
+      </div>
+   </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
